@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>🎄 Party de Noël de la DARP 🎄</title>
+<style>
+:root{--bg:#0b1a6b;--fg:#ffff00;--red:#ff0000;--grn:#00ff00;--cyan:#00ffff;--pink:#ff00ff;--box:#000080;--bd:#ffffff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1a6b;--fg:#ffff00;--box:#000080}}
+:root[data-theme="dark"]{--bg:#0b1a6b;--fg:#ffff00;--box:#000080}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background-color:var(--bg);
+background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Ctext x='4' y='24' font-size='20'%3E%E2%AD%90%3C/text%3E%3Ctext x='34' y='54' font-size='20'%3E%F0%9F%8E%81%3C/text%3E%3C/svg%3E");
+color:var(--fg);font-family:"Comic Sans MS","Comic Sans","Chalkboard SE",cursive,sans-serif;text-align:center;overflow-x:hidden}
+.wrap{max-width:720px;margin:0 auto;padding:10px}
+h1{font-size:clamp(28px,8vw,52px);margin:8px 0;color:var(--red);text-shadow:3px 3px var(--grn),6px 6px #000;animation:rb 1.5s linear infinite}
+@keyframes rb{0%{color:#f00}20%{color:#ff0}40%{color:#0f0}60%{color:#0ff}80%{color:#f0f}100%{color:#f00}}
+.blink{animation:bl 1s steps(1) infinite}@keyframes bl{50%{visibility:hidden}}
+.box{background:var(--box);border:6px ridge var(--bd);margin:14px 0;padding:10px;color:#fff}
+.box h2{color:var(--cyan);margin:4px 0;text-decoration:underline}
+marquee{background:#000;color:var(--grn);font-size:20px;border:3px double var(--red);padding:4px;font-family:"Courier New",monospace}
+hr.rbw{border:0;height:8px;background:linear-gradient(90deg,#f00,#ff0,#0f0,#0ff,#00f,#f0f,#f00);margin:14px 0}
+.gif{display:inline-block;font-size:48px}
+.spin{animation:sp 2s linear infinite}@keyframes sp{to{transform:rotate(360deg)}}
+.bounce{animation:bn .7s ease-in-out infinite alternate}@keyframes bn{to{transform:translateY(-22px)}}
+.wiggle{animation:wg .4s ease-in-out infinite alternate}@keyframes wg{from{transform:rotate(-15deg)}to{transform:rotate(15deg)}}
+.pulse{animation:pl .8s ease-in-out infinite alternate}@keyframes pl{to{transform:scale(1.5)}}
+.lt{animation:bl 1s steps(1) infinite}.lt:nth-child(2n){animation-delay:.5s}
+.counter{display:inline-block;background:#000;color:var(--red);font-family:"Courier New",monospace;border:3px inset #888;padding:2px 8px;letter-spacing:4px;font-size:22px}
+a{color:var(--cyan)}a:hover{color:var(--pink)}
+button{font-family:inherit;font-size:18px;background:#c0c0c0;border:3px outset #fff;padding:6px 14px;cursor:pointer;color:#000}
+button:active{border-style:inset}
+td,th{border:2px solid var(--bd);padding:6px}table{margin:0 auto;border-collapse:collapse;color:#fff}
+.snow{position:fixed;top:-30px;z-index:50;pointer-events:none;color:#fff;animation:fall linear infinite}
+@keyframes fall{to{transform:translateY(110vh) translateX(40px)}}
+small{color:#aaa}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<marquee scrollamount="8">🎅 JOYEUX NOËL !!! 🎅 Il neige !!! 🎅 HO! HO! HO !!! 🎅</marquee>
+
+<div>
+<span class="gif bounce">🎄</span>
+<span class="gif spin">⭐</span>
+<span class="gif wiggle">🔔</span>
+<span class="gif bounce" style="animation-delay:.3s">🎅</span>
+<span class="gif spin">❄️</span>
+<span class="gif wiggle">🦌</span>
+<span class="gif bounce" style="animation-delay:.5s">🎄</span>
+</div>
+
+<h1>🎄 PARTY DE NOËL 🎄</h1>
+<p class="blink" style="font-size:26px;color:var(--grn)">*** VIVE LA DARP ***</p>
+
+<!-- Sapin animé -->
+<svg width="180" height="210" viewBox="0 0 180 210" role="img" aria-label="Sapin de Noël qui clignote">
+<polygon points="90,10 40,80 140,80" fill="#0a8a2a"/>
+<polygon points="90,50 25,125 155,125" fill="#0c9a30"/>
+<polygon points="90,95 10,175 170,175" fill="#0fb03a"/>
+<rect x="78" y="175" width="24" height="30" fill="#7a4a1a"/>
+<polygon points="90,0 94,10 104,10 96,16 99,26 90,20 81,26 84,16 76,10 86,10" fill="#ffeb00"><animate attributeName="fill" values="#ffeb00;#fff;#ffeb00" dur="0.6s" repeatCount="indefinite"/></polygon>
+<circle cx="75" cy="65" r="6" fill="#f00"><animate attributeName="opacity" values="1;0.1;1" dur="0.8s" repeatCount="indefinite"/></circle>
+<circle cx="105" cy="75" r="6" fill="#ff0"><animate attributeName="opacity" values="0.1;1;0.1" dur="0.8s" repeatCount="indefinite"/></circle>
+<circle cx="60" cy="110" r="7" fill="#0ff"><animate attributeName="opacity" values="1;0.1;1" dur="1s" repeatCount="indefinite"/></circle>
+<circle cx="120" cy="115" r="7" fill="#f0f"><animate attributeName="opacity" values="0.1;1;0.1" dur="1s" repeatCount="indefinite"/></circle>
+<circle cx="90" cy="105" r="7" fill="#f00"><animate attributeName="opacity" values="1;0.1;1" dur="0.7s" repeatCount="indefinite"/></circle>
+<circle cx="45" cy="160" r="8" fill="#ff0"><animate attributeName="opacity" values="0.1;1;0.1" dur="0.9s" repeatCount="indefinite"/></circle>
+<circle cx="90" cy="155" r="8" fill="#0ff"><animate attributeName="opacity" values="1;0.1;1" dur="0.9s" repeatCount="indefinite"/></circle>
+<circle cx="135" cy="160" r="8" fill="#f0f"><animate attributeName="opacity" values="0.1;1;0.1" dur="0.9s" repeatCount="indefinite"/></circle>
+</svg>
+
+<hr class="rbw">
+
+<div class="box">
+<h2>📅 LES DÉTAILS DU PARTY 📅</h2>
+<table>
+<tr><th>Quand ?</th><td> décembre, 19h00</td></tr>
+<tr><th>Où ?</th><td>(l’adresse s’en vient)</td></tr>
+<tr><th>Quoi apporter ?</th><td>Ton bonheur</td></tr>
+<tr><th>Code vestimentaire</th><td>Chandail de Noël laid <b class="blink">OUI OUI</b></td></tr>
+</table>
+</div>
+
+<div class="box">
+<h2>🍗 AU MENU 🍗</h2>
+<p>🥧 Tourtière &nbsp; 🍰 Bûche de Noël &nbsp; 🍷 Caribou &nbsp; 🍬 Fudge de matante</p>
+<p><span class="gif pulse">🎁</span> <span class="gif pulse" style="animation-delay:.2s">🎁</span> <span class="gif pulse" style="animation-delay:.4s">🎁</span></p>
+</div>
+
+<hr class="rbw">
+
+<p style="font-size:22px">
+<span class="lt">💡</span><span class="lt">💡</span><span class="lt">💡</span><span class="lt">💡</span><span class="lt">💡</span><span class="lt">💡</span><span class="lt">💡</span><span class="lt">💡</span>
+</p>
+
+<div class="box">
+<h2>🚧 EN CONSTRUCTION 🚧</h2>
+<p><span class="gif wiggle" style="font-size:32px">👷</span> Le livre d’or s’en vient bientôt !!! <span class="gif wiggle" style="font-size:32px">🔨</span></p>
+<button onclick="alert('🎅 HO HO HO ! Merci de ta réponse ! À samedi ! 🎄')">✉️ Je viens au party !</button>
+</div>
+
+<p>Tu es le visiteur numéro<br>
+<span class="counter" id="cnt">001337</span></p>
+
+<p><small>Meilleur visionné avec Netscape Navigator 4.0 en 800x600<br>
+© 1996 – Tous droits réservés – Fait à la main avec Notepad - Simon Gauthier 2026❄️</small></p>
+<p>
+<marquee direction="right" scrollamount="6" style="width:80%;font-size:30px;border:0;background:none">🎅🛷🦌🦌🦌🦌</marquee></p>
+</div>
+
+<script>
+(function(){
+  var chars=['❄','❅','❆','✻','*'];
+  for(var i=0;i<60;i++){
+    var s=document.createElement('div');
+    s.className='snow';
+    s.textContent=chars[i%chars.length];
+    s.style.left=(Math.random()*100)+'vw';
+    s.style.fontSize=(10+Math.random()*22)+'px';
+    s.style.animationDuration=(5+Math.random()*9)+'s';
+    s.style.animationDelay=(-Math.random()*12)+'s';
+    s.style.opacity=0.5+Math.random()*0.5;
+    document.body.appendChild(s);
+  }
+  var n=1337,c=document.getElementById('cnt');
+  setInterval(function(){n+=Math.floor(Math.random()*3);c.textContent=('000000'+n).slice(-6);},2500);
+})();
+</script>
+</body>
+</html>
